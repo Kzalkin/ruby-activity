@@ -12,7 +12,4 @@ class Cupcake < Confection
 end
 
 class BananaCake < Confection
-  def prepare
-    super
-  end
 end
