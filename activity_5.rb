@@ -27,7 +27,7 @@ class User
   protected
 
   def login
-    puts "User logged in. IP address: #{@ip_address}"
+    puts "#{self.class} logged in. IP address: #{@ip_address}"
   end
 end
 
@@ -35,7 +35,6 @@ class Admin < User
   include AdminPermisson
   def admin_login
     login
-    puts "User is #{self.class}"
   end
 end
 
@@ -43,7 +42,6 @@ class Buyer < User
   include BuyerPermission
   def buyer_login
     self.login
-    puts "User is #{self.class}"
   end
 end
 
